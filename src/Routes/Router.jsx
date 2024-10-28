@@ -81,7 +81,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/all_meals/${params.id}`),
+          fetch(`https://assignment-12-server-beta-roan.vercel.app/all_meals/${params.id}`),
       },
       {
         path: "/meals",
@@ -99,7 +99,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/plans/${params.id}`),
+          fetch(`https://assignment-12-server-beta-roan.vercel.app/plans/${params.id}`),
       },
     ],
   },
@@ -189,7 +189,7 @@ const router = createBrowserRouter([
           </AdminRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/all_meals/${params.id}`),
+          fetch(`https://assignment-12-server-beta-roan.vercel.app/all_meals/${params.id}`),
       },
     ],
   },
